@@ -13,7 +13,7 @@ public class VehicleTest {
 		dummyVehicle1.setX(3);
 		dummyVehicle2.setX(2);
 		
-		dummyVehicle1.diff(dummyVehicle1.getX(), dummyVehicle2.getX());
+		DummyVehicle.diff(dummyVehicle1.getX(), dummyVehicle2.getX());
 		assertEquals(1, Math.abs(dummyVehicle1.getX()-dummyVehicle2.getX()));
 	}
 }

@@ -64,7 +64,9 @@ public abstract class Vehicle {
 	
 	public abstract void back(int time);
 	
-	public void diff(int x1,int x2) {
+	public static void diff(int x1,int x2) {
+		//インスタンスメソッドであることに違和感を感じたので静的メソッドに
+		//他のメソッドに合わせて標準出力することに
 		int difference = x1 - x2;
 		System.out.println("現在位置の差は" + Math.abs(difference) + "kmです");
 	}
